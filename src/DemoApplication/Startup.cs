@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using DemoApplication.Middleware;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
@@ -20,7 +23,31 @@ namespace DemoApplication
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
+
+
             app.UseIISPlatformHandler();
+
+            //app.Map("/timed/show", (builder) =>
+            //{
+            //    builder.UseMiddleware<AddResponseTimingHeader>();
+            //    // or 
+            //    // builder.UseResponseTimeHeader();
+
+            //    builder.Run(async (context) =>
+            //    {
+            //        await context.Response.WriteAsync("Hello timed World!");
+            //    });
+            //});
+
+
+            //app.Use(async (context, next) =>
+            //{
+            //    context.Response.Headers.Add("X-MyCustomHeader", new[] { "someText" });
+
+            //    await next();
+            //});
+
+
 
             app.Run(async (context) =>
             {

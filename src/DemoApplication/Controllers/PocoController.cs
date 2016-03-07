@@ -25,6 +25,7 @@ namespace DemoApplication.Controllers
             return result;
         }
 
+        [Route("api/[controller]")]
         public IActionResult IndexJson()
         {
 

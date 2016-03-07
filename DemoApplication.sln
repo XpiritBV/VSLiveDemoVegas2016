@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DemoApplication", "src\DemoApplication\DemoApplication.xproj", "{ECF885F7-65D9-4338-96C1-D0BA9FE06AE8}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TagHelpers", "src\TagHelpers\TagHelpers.xproj", "{483F643F-DE18-4278-A4CB-CF428BB7A354}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{ECF885F7-65D9-4338-96C1-D0BA9FE06AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF885F7-65D9-4338-96C1-D0BA9FE06AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF885F7-65D9-4338-96C1-D0BA9FE06AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483F643F-DE18-4278-A4CB-CF428BB7A354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483F643F-DE18-4278-A4CB-CF428BB7A354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483F643F-DE18-4278-A4CB-CF428BB7A354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483F643F-DE18-4278-A4CB-CF428BB7A354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ECF885F7-65D9-4338-96C1-D0BA9FE06AE8} = {C0CE28DC-D706-4513-82F8-79ECDCDE8D60}
+		{483F643F-DE18-4278-A4CB-CF428BB7A354} = {C0CE28DC-D706-4513-82F8-79ECDCDE8D60}
 	EndGlobalSection
 EndGlobal

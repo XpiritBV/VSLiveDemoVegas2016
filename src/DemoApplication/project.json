@@ -12,6 +12,8 @@
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
     "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
+    "Microsoft.AspNet.Razor": "4.0.0-rc1-final",
+    "Microsoft.AspNet.Razor.Runtime": "4.0.0-rc1-final",
     "TagHelpers": "1.0.0-*"
   },
 

@@ -8,7 +8,10 @@
     <address>
         one desk next to you<br/>
     </address>
-    current date time: <datetime format="dd-MM-yyyy"/> 
+    <div>current date time: <datetime format="dd-MM-yyyy"/>
+    </div>
+    <div>here is a list of sessions to choose from:</div>
+    <div>@Component.Invoke("TopSessions")</div>
 </environment>
 <environment names="Staging,Production">
 

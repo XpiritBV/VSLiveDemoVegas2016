@@ -18,8 +18,11 @@ namespace WebApplication8.Controllers
             this._envName = env.EnvironmentName;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromServices] ILoggerFactory factory)
         {
+            ILogger logger = factory.CreateLogger<HomeController>();
+            logger.LogInformation("Information from {0}", ActionContext.ActionDescriptor.Name);
+            logger.LogDebug(1000, "Debug from {0}", ActionContext.HttpContext.Request.Path);
             return View();
         }
 

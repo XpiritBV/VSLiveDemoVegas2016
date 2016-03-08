@@ -13,8 +13,19 @@ namespace TagHelpers
     {
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            string format = context.AllAttributes.Select(a => a.Name == "format").First().ToString();
-            output.Content.SetContent(DateTime.Now.ToString(format));
+            output.TagName = "";
+            output.TagMode = TagMode.SelfClosing;
+
+            string formatString = null;
+            string datetimeValue = null;
+            if (context.AllAttributes["format"]!=null)
+            {
+                formatString = context.AllAttributes["format"].Value.ToString();
+            }
+
+            datetimeValue = DateTime.Now.ToString(formatString ?? "yyyy MMMM dd");
+
+            output.Content.SetContent(datetimeValue);
         }
     }
 }
